@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "buildCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
+  "installCommand": "echo skip",
+  "framework": null,
+  "env": {
+    "VITE_USE_MOCK": "true",
+    "VITE_API_URL": "http://localhost:5000/api"
+  },
+  "build": {
+    "env": {
+      "VITE_USE_MOCK": "true",
+      "VITE_API_URL": "http://localhost:5000/api"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
